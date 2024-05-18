@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ccParentActivity"
+    tools:context=".ui.activity.LoginActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_view" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/login_illus"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtOnePassword"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/edt_bg"
+        android:textColorHint="@color/hint_color"
+        app:boxBackgroundMode="none"
+        android:layout_marginBottom="10dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/edtSecPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSecPassword"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/edt_bg"
+        android:textColorHint="@color/hint_color"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:passwordToggleDrawable="@drawable/baseline_visibility_off_24"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_password"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg"
+        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtSecPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtSecPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/ivProfileMenu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile_pic"
+            app:c_border="false"
+            app:c_shadow="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNameMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Ahmed Ammar"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivProfileMenu"
+            app:layout_constraintTop_toTopOf="@+id/ivProfileMenu" />
+
+        <TextView
+            android:id="@+id/tvEmailMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="ahXXXXX@XXXmail.com"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toEndOf="@+id/ivProfileMenu"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameMenu" />
+
+        <TextView
+            android:id="@+id/edtReceiptNumber"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|start"
+            android:text="@string/edit_profile"
+            android:paddingStart="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivProfileMenu"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="RtlSymmetry"
+            app:drawableStartCompat="@drawable/edit_24px" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/view_grey"
+            app:layout_constraintTop_toBottomOf="@+id/edtReceiptNumber"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/edtMyAddress"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="@string/my_address"
+            android:visibility="gone"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:drawableStartCompat="@drawable/baseline_location_on_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="RtlSymmetry" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/view_grey"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/edtMyAddress"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/edtMyReceipts"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="@string/about_us"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:drawableStartCompat="@drawable/shopping_basket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="RtlSymmetry" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/view_grey"
+            app:layout_constraintTop_toBottomOf="@+id/edtMyReceipts"
+            tools:layout_editor_absoluteX="20dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edtMyList"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintWidth_percent="0.9">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="15dp"
+                android:text="@string/enable_dark_theme"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/bolt_24px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/themeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:thumbTint="@color/text_color"
+                app:trackTint="@color/green"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/view_grey"
+            app:layout_constraintTop_toBottomOf="@+id/edtMyList"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/edtMail"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="@string/mail_to_us"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/baseline_mail_outline_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="RtlSymmetry" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/view_grey"
+            app:layout_constraintTop_toBottomOf="@+id/edtMail"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/edtLogout"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="@string/logout"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/power_settings_new_24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

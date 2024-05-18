@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShoppingCartStore"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.ShowReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ShowListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.AddListCategory"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SelectListCategoryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_select_list_category"
+            android:theme="@style/Theme.ShoppingCartStore" />
+        <activity
+            android:name=".ui.activity.AddedListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.AddReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CategoryItemListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PasswordEnterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EmailEnterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EmailAuthenticateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

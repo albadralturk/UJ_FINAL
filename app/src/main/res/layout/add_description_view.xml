@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="30dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/description"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/write_from_here"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.5"
+        android:background="@color/edt_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvCancelDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/cancel"
+        android:padding="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="20dp"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edDescription"
+        app:layout_constraintStart_toStartOf="@+id/edDescription"
+        app:layout_constraintTop_toBottomOf="@+id/edDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

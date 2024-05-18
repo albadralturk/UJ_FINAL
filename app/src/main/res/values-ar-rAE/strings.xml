@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">متجر سلة التسوق</string>
+    <string name="later">لاحقًا</string>
+    <string name="for_the_security_amp_safety_please_choose_a_password"><![CDATA[للأمان والسلامة يرجى اختيار كلمة مرور]]></string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="list_it">أضف إلى القائمة</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">مرحبًا بك في الشاشة الفارغة</string>
+    <string name="add_to_list">أضف إلى القائمة</string>
+    <string name="receipt_number">رقم الإيصال</string>
+    <string name="amount">المبلغ</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="my_receipts">إيصالاتي</string>
+    <string name="my_address">عنواني</string>
+    <string name="my_lists">قوائمي</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="ongoing">قائمة</string>
+    <string name="history">سجل</string>
+    <string name="title_activity_select_list_category">اختر فئة القائمة</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">الشاشة الأولى</string>
+    <string name="second_fragment_label">الشاشة الثانية</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+
+
+    <string name="enter_verification_code">أدخل رمز التحقق</string>
+    <string name="we_have_sent_you_an_email">لقد أرسلنا لك بريدًا إلكترونيًا:</string>
+    <string name="enter_an_verification_code">أدخل رمز التحقق</string>
+    <string name="we_need_to_verify_you_we_will_send_you_a_one_time_verification_code">نحن بحاجة للتحقق منك. سنرسل لك رمز تحقق لمرة واحدة.</string>
+    <string name="enter_your_email">أدخل بريدك الإلكتروني</string>
+    <string name="enter_an_email">أدخل بريدًا إلكترونيًا</string>
+
+    <string name="enable_dark_theme">تمكين الوضع الداكن</string>
+    <string name="mail_to_us">أرسل لنا بريدًا</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="about_us">عنا</string>
+    <string name="banana">موز</string>
+    <string name="orange">برتقال</string>
+    <string name="mango">مانجو</string>
+    <string name="peach">خوخ</string>
+    <string name="cereal">حبوب الإفطار</string>
+    <string name="egg">بيضة</string>
+    <string name="fish">سمك</string>
+    <string name="steak">شريحة لحم</string>
+    <string name="popcorn">الفشار</string>
+    <string name="chips">رقائق</string>
+    <string name="cheese">جبن</string>
+    <string name="milk">حليب</string>
+    <string name="soft_drink">مشروب غازي</string>
+    <string name="water">ماء</string>
+    <string name="save">حفظ</string>
+    <string name="store_optional">المتجر (اختياري)</string>
+    <string name="done">تم</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="write_from_here">اكتب هنا..</string>
+    <string name="description">الوصف:</string>
+    <string name="cancel">إلغاء</string>
+    <string name="add">إضافة</string>
+    <string name="uploading">جاري الرفع...</string>
+    <string name="list_added_successfully">تمت إضافة القائمة بنجاح</string>
+    <string name="error_saving_list">حدث خطأ أثناء حفظ القائمة</string>
+    <string name="add_to_receipts">إضافة إلى الإيصالات</string>
+    <string name="please_select_image">يرجى تحديد صورة</string>
+    <string name="enter_all_data">يرجى إدخال جميع البيانات</string>
+    <string name="receipt_saved_successfully">تم حفظ الإيصال بنجاح!</string>
+    <string name="error_saving_receipt">حدث خطأ أثناء حفظ الإيصال:</string>
+    <string name="error_uploading_image">حدث خطأ أثناء رفع الصورة:</string>
+    <string name="added_to_the_list">تمت الإضافة إلى القائمة</string>
+    <string name="invalid_email_entered">تم إدخال بريد إلكتروني غير صالح</string>
+    <string name="lists">القوائم</string>
+    <string name="please_enter_all_fields">يرجى إدخال جميع الحقول</string>
+    <string name="password_must_be_at_least_6_characters">يجب أن تتكون كلمة المرور من 6 أحرف على الأقل</string>
+    <string name="entered_email_or_password_is_wrong">البريد الإلكتروني أو كلمة المرور المدخلة غير صحيحة</string>
+    <string name="total_item">إجمالي العناصر:</string>
+    <string name="list_name">اسم القائمة:</string>
+    <string name="receipt">الإيصال</string>
+    <string name="receipt_price">سعر الإيصال:</string>
+    <string name="item_name">اسم العنصر:</string>
+    <string name="item_description">وصف العنصر:</string>
+
+</resources>

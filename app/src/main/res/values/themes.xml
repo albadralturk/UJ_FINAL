@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShoppingCartStore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/text_color
+        </item> <!-- Set the status bar color here -->
+
+    </style>
+
+    <style name="Theme.ShoppingCartStore" parent="Base.Theme.ShoppingCartStore" />
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTabText</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Add other text-related attributes here -->
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize positive button color -->
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <color name="text_color">#37474F</color>
+    <color name="edt_bg">#F0F1F2</color>
+
+</resources>

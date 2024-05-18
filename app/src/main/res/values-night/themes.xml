@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShoppingCartStore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/text_color
+        </item> <!-- Set the status bar color here -->
+
+
+    </style>
+
+    <color name="text_color">#FFFFFF</color>
+    <color name="edt_bg">#1D3145</color>
+
+</resources>

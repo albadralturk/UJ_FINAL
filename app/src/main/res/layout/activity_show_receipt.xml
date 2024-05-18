@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/includedToolbar"
+        layout="@layout/toolbar_view"/>
+
+    <TextView
+        android:id="@+id/edtReceiptNumber"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/edt_bg"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/receipt_number"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:textSize="16sp"
+        android:drawablePadding="15dp"
+        android:gravity="start|center"
+        android:drawableStart="@drawable/shopping_basket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includedToolbar"
+        app:layout_constraintWidth_percent="0.9"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/edtReceiptAmount"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/edt_bg"
+        android:drawableStart="@drawable/range_24px"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/amount"
+        android:gravity="start|center"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtReceiptNumber"
+        app:layout_constraintWidth_percent="0.9"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/edtStore"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/edt_bg"
+        android:drawableStart="@drawable/label_24px"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/store_optional"
+        android:paddingStart="15dp"
+        android:gravity="start|center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtReceiptAmount"
+        app:layout_constraintWidth_percent="0.9"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/ivCameraSelector"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="40dp"
+        android:src="@drawable/camera_selector_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtStore"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

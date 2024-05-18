@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ccParentActivity"
+    tools:context=".ui.activity.EditProfileActivity">
+
+    <include
+        android:id="@+id/includedToolbar"
+        layout="@layout/toolbar_view"/>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/ivProfileMenu"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_pic"
+        app:c_border="false"
+        android:layout_marginTop="20dp"
+        app:c_shadow="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includedToolbar" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/camera_capture"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivProfileMenu"
+        app:layout_constraintTop_toTopOf="@+id/ivProfileMenu" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtProfileName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/edt_bg"
+        android:textColorHint="@color/hint_color"
+        app:boxBackgroundMode="none"
+        android:layout_marginTop="40dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfileMenu"
+        app:layout_constraintWidth_percent="0.9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/account_circle_24px"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtProfilePassword"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/edt_bg"
+        android:textColorHint="@color/hint_color"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfileName"
+        app:layout_constraintWidth_percent="0.9"
+        app:passwordToggleDrawable="@drawable/baseline_visibility_off_24"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_password"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtProfilePhoneNo"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/edt_bg"
+        android:textColorHint="@color/hint_color"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfilePassword"
+        app:layout_constraintWidth_percent="0.9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pnEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/call_24px"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/phone_number"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

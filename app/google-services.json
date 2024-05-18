@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582548118525",
+    "project_id": "shopping-50bad",
+    "storage_bucket": "shopping-50bad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582548118525:android:cabb6763c006deb50e9794",
+        "android_client_info": {
+          "package_name": "com.example.shoppingstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqfHlSzO0uHitusj1wQ6O-FckrSSg0vt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
